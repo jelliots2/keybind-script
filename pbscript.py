@@ -24,5 +24,4 @@ def send_media_key(vk_code):
   
 keyboard.add_hotkey('pause', lambda: send_media_key(VK_MEDIA_PLAY_PAUSE))
 
-print("Media key binding active. Press PB  button (or Pause key) to toggle play/pause.")
 keyboard.wait()
