@@ -12,13 +12,13 @@ A simple media keybind script I am creating for use with keyboards that lack pro
 ## Features
 
 - Binds PB button to act as a Media Play Pause key in Windows.
-- You can edit this to bind whatever keys for whatever actions.
+- You can edit this to bind whatever keys for whatever actions, just change the key code in the script.
 
-##Easy Install
+## Easy Install
 The exe is in the Dist folder. Pretty sure you can just download and run it. It will show up in your application tray. 
 To make it run on startup, Win + R (Run), type "shell:startup" and past the exe, or a shortcut to the exe in that folder.
 
-##Instructions
+## Instructions
 For if you want to download the whole application (ie if you want to change or test it)
 pip install the dependencies: keyboard, pystray, ctypes, time, threading, pyinstaller.
 Create EXE using pyinstaller, or download the exe from here.
