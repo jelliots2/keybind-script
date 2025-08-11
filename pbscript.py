@@ -26,10 +26,10 @@ def send_media_key(vk_code):
   ctypes.windll.user32.keybd_event(vk_code, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0)
   
 def keyboard_listener():  
-  keyboard.add_hotkey('pause', lambda: send_media_key(VK_MEDIA_PLAY_PAUSE))
+  keyboard.on_press_key('pause', lambda _: send_media_key(VK_MEDIA_PLAY_PAUSE))
   keyboard.wait()
-  
-def on_exit(icon, item):
+
+def on_exit(icon, _):
   icon.stop()
   keyboard.unhook_all()
   global running
